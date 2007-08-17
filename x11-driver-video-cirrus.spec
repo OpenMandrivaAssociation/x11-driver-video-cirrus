@@ -42,6 +42,6 @@ rm -rf %{buildroot}
 %{_libdir}/xorg/modules/drivers/cirrus_laguna.so
 %{_libdir}/xorg/modules/drivers/cirrus_alpine.la
 %{_libdir}/xorg/modules/drivers/cirrus_alpine.so
-%{_mandir}/man4/cirrus.4.bz2
+%{_mandir}/man4/cirrus.*
 
 

@@ -1,6 +1,6 @@
 Name: x11-driver-video-cirrus
 Version: 1.1.0
-Release: %mkrel 4
+Release: %mkrel 5
 Summary: The X.org driver for Cirrus Logic
 Group: Development/X11
 URL: http://xorg.freedesktop.org
@@ -19,9 +19,7 @@ The X.org driver for Cirrus Logic
 %setup -q -n xf86-video-cirrus-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure
 %make
 
 %install

@@ -1,10 +1,11 @@
 Name: x11-driver-video-cirrus
 Version: 1.1.0
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: The X.org driver for Cirrus Logic
 Group: Development/X11
 URL: http://xorg.freedesktop.org
 Source: http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.bz2
+Patch0: xf86-video-cirrus-visibility.patch
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 BuildRequires: x11-proto-devel >= 1.0.0
@@ -17,6 +18,7 @@ The X.org driver for Cirrus Logic
 
 %prep
 %setup -q -n xf86-video-cirrus-%{version}
+%patch0 -p1 -b .visibility
 
 %build
 %configure

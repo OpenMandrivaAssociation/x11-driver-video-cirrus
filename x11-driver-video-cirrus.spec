@@ -1,8 +1,6 @@
-%define debug_package	%{nil}
-
 Name: x11-driver-video-cirrus
 Version: 1.1.0
-Release: %mkrel 7
+Release: %mkrel 8
 Summary: The X.org driver for Cirrus Logic
 Group: Development/X11
 URL: http://xorg.freedesktop.org

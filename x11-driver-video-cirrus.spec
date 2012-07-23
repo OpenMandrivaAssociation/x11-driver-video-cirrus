@@ -1,5 +1,5 @@
 Name: x11-driver-video-cirrus
-Version: 1.5.0
+Version: 1.5.1
 Release: 1
 Summary: X.org driver for Cirrus Logic
 Group: System/X11

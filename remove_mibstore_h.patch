@@ -10,3 +10,15 @@
  #include "micmap.h"
  
  /* Needed by the Shadow Framebuffer */
+--- xf86-video-cirrus-1.5.1/src/lg_driver.c~	2012-07-16 02:02:41.000000000 +0000
++++ xf86-video-cirrus-1.5.1/src/lg_driver.c	2013-03-17 03:03:56.080997260 +0000
+@@ -46,9 +46,6 @@
+ /* need this for inputInfo */
+ #include "inputstr.h"
+ 
+-/* All drivers implementing backing store need this */
+-#include "mibstore.h"
+-
+ #include "micmap.h"
+ 
+ /* Needed by the Shadow Framebuffer */

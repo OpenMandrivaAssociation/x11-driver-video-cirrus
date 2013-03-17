@@ -1,0 +1,12 @@
+--- xf86-video-cirrus-1.5.1/src/alp_driver.c~	2012-07-16 02:02:41.000000000 +0000
++++ xf86-video-cirrus-1.5.1/src/alp_driver.c	2013-03-17 02:56:14.060004546 +0000
+@@ -39,9 +39,6 @@
+ /* All drivers initialising the SW cursor need this */
+ #include "mipointer.h"
+ 
+-/* All drivers implementing backing store need this */
+-#include "mibstore.h"
+-
+ #include "micmap.h"
+ 
+ /* Needed by the Shadow Framebuffer */

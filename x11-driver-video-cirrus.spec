@@ -6,6 +6,7 @@ Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.bz2
+Patch0:		remove_mibstore_h.patch
 
 BuildRequires:	pkgconfig(xproto)
 BuildRequires:	pkgconfig(xorg-server)
@@ -17,6 +18,7 @@ x11-driver-video-cirrus is the X.org driver for Cirrus Logic.
 
 %prep
 %setup -qn xf86-video-cirrus-%{version}
+%apply_patches
 autoreconf -fiv
 
 %build

@@ -6,7 +6,7 @@ Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.bz2
-
+Patch0:		U_cirrus-don-t-use-pciTag.patch
 BuildRequires:	pkgconfig(xproto)
 BuildRequires:	pkgconfig(xorg-server)
 BuildRequires:	pkgconfig(xorg-macros)
@@ -21,7 +21,7 @@ x11-driver-video-cirrus is the X.org driver for Cirrus Logic.
 autoreconf -fiv
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install

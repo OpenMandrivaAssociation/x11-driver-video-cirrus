@@ -16,7 +16,7 @@ x11-driver-video-cirrus is the X.org driver for Cirrus Logic.
 
 %prep
 %setup -qn xf86-video-cirrus-%{version}
-%apply_patches
+%autopatch -p1
 autoreconf -fiv
 
 %build

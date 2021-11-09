@@ -1,7 +1,7 @@
 Summary:	X.org driver for Cirrus Logic
 Name:		x11-driver-video-cirrus
 Version:	1.5.3
-Release:	5
+Release:	6
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org

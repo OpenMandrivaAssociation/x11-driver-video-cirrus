@@ -1,11 +1,11 @@
 Summary:	X.org driver for Cirrus Logic
 Name:		x11-driver-video-cirrus
-Version:	1.5.3
-Release:	6
+Version:	1.6.0
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.xz
 BuildRequires:	pkgconfig(xproto)
 BuildRequires:	pkgconfig(xorg-server)
 BuildRequires:	pkgconfig(xorg-macros)
@@ -21,10 +21,10 @@ autoreconf -fiv
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc COPYING

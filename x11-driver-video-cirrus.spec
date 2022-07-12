@@ -29,6 +29,4 @@ autoreconf -fiv
 %files
 %doc COPYING
 %{_libdir}/xorg/modules/drivers/cirrus_drv.so
-%{_libdir}/xorg/modules/drivers/cirrus_laguna.so
-%{_libdir}/xorg/modules/drivers/cirrus_alpine.so
 %{_mandir}/man4/cirrus.*
